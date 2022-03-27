@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 import { ColorModeScript, ChakraProvider } from "@chakra-ui/react";
-import theme from "./theme";
+import theme from "../lib/theme";
 import favicon from "@icons/codex.png";
 import "vanilla-tilt";
 //* Components
