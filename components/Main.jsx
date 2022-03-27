@@ -33,7 +33,6 @@ export default function Main({ children }) {
 
                               {text.split("").map((char, index) => {
                                    return (
-                                        <>
                                              <motion.span
                                                   className="text-5xl w-full md:text-7xl lg:text-8xl"
                                                   key={char + "-" + index}
@@ -41,7 +40,6 @@ export default function Main({ children }) {
                                              >
                                                   {char}
                                              </motion.span>
-                                        </>
                                    );
                               })}
                               {/* <span className="text-exs"> /&gt;</span> */}
