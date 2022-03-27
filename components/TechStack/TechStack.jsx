@@ -67,15 +67,17 @@ export default function TechStack() {
           >
                {TStack.map((item) => {
                     return (
-                         <motion.div key={item.label} className="h-full flex flex-col justify-end py-5 ">
-                              <Bar {...item} />
-                              <h1 className="font-bold text-custom">
-                                   {item.label}
-                              </h1>
-                              <h3 className="text-[0.7rem] text-custom">
-                                   {item.value + "%"}
-                              </h3>
-                         </motion.div>
+                         <React.Fragment key={item.label}>
+                              <motion.div key={item.label} className="h-full flex flex-col justify-end py-5 ">
+                                   <Bar {...item} />
+                                   <h1 className="font-bold text-custom">
+                                        {item.label}
+                                   </h1>
+                                   <h3 className="text-[0.7rem] text-custom">
+                                        {item.value + "%"}
+                                   </h3>
+                              </motion.div>
+                         </React.Fragment>
                     );
                })}
           </motion.div>
