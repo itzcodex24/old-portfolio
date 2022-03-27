@@ -1,0 +1,47 @@
+{
+    "name": "Portofolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "s": "npm run dev",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@chakra-ui/react": "^1.6.10",
+        "@emotion/react": "^11.5.0",
+        "@emotion/styled": "^11.3.0",
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.15",
+        "@material-ui/core": "^4.12.1",
+        "animejs": "^3.2.1",
+        "axios": "^0.21.1",
+        "currency.js": "^2.0.4",
+        "faker": "^5.5.3",
+        "framer-motion": "^4.1.17",
+        "gsap": "^3.7.1",
+        "lodash": "^4.17.21",
+        "next": "^11.1.0",
+        "node-fetch": "^2.6.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-hook-inview": "^4.3.10",
+        "react-intersection-observer": "^8.33.1",
+        "react-particles-js": "^3.5.3",
+        "typewriter-effect": "^2.18.0",
+        "unsplash-js": "^7.0.13",
+        "vanilla-tilt": "^1.7.2"
+    },
+    "devDependencies": {
+        "@svgr/webpack": "^5.5.0",
+        "autoprefixer": "^10.4.4",
+        "eslint": "7.29.0",
+        "eslint-config-next": "11.0.1",
+        "postcss": "^8.4.12",
+        "tailwindcss": "^3.0.23"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["components/*"],
+            "@static/*": ["lib/static/*"],
+            "@lib/*": ["lib/*"],
+            "@icons/*": ["lib/icons/*"],
+            "@links": ["lib/static/links.js"],
+            "@helpers/*": ["lib/helpers/*"],
+            "@hooks/*": ["lib/hooks/*"],
+            "@public/*": ["public/*"],
+            "@variants/*": ["lib/variants/*"]
+        }
+    },
+    "exclude": ["node_modules", ".next"]
+}
