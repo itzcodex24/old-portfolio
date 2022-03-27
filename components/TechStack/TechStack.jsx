@@ -65,9 +65,9 @@ export default function TechStack() {
                ref={ref}
                className="flex items-end h-full gap-2 "
           >
-               {TStack.map((item, index) => {
+               {TStack.map((item) => {
                     return (
-                         <motion.div key={index} className="h-full flex flex-col justify-end py-5 ">
+                         <motion.div key={item.label} className="h-full flex flex-col justify-end py-5 ">
                               <Bar {...item} />
                               <h1 className="font-bold text-custom">
                                    {item.label}
