@@ -14,6 +14,6 @@ export default class Document extends NextDocument {
           <NextScript />
         </body>
       </Html>
-    )import theme from "./theme"
+    )
   }
 }
