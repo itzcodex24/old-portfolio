@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -12,4 +12,8 @@
 ::-webkit-scrollbar-thumb {
   /* border-radius: 6px; */
   background: #506d96;
+}
+
+* {
+  scroll-behavior: smooth;
 }
