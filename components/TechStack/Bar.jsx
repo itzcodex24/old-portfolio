@@ -10,7 +10,7 @@ export default function Bar({ label, value, Icon, backgroundColor }) {
      };
 
      return (
-          <div className="flex h-full flex-col justify-end items-center gap-5">
+          <div className="flex h-full flex-col justify-end items-center md:gap-5 gap-1">
                <Icon className="w-[3rem] h-[3rem]" />
                <motion.div
                     transition={{ duration: 0.5, type: "tween" }}
@@ -20,8 +20,8 @@ export default function Bar({ label, value, Icon, backgroundColor }) {
                          transform: "perspective(200px)",
                          backgroundColor: backgroundColor,
                     }}
-                    className="w-[100px] flex justify-end py-5 flex-col
-                    items-center rounded "
+                    className="md:w-[100px] flex justify-end py-5 flex-col
+                    items-center rounded w-[40px]"
                ></motion.div>
           </div>
      );
