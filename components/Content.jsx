@@ -7,7 +7,7 @@ export default function Content() {
      return (
           <section className="w-full min-h-[100vh] h-min-content flex justify-center  text-white">
                <div className="max-w-[1920px] flex justify-center">
-                    <motion.div className="md:w-[70%] text-center p-10">
+                    <motion.div className="md:w-[70%] text-center p-10 w-[400px]">
                          <motion.h1
                               className="md:text-5xl text-3xl font-bold p-10 text-[#1bfaad] font-aboutme tracking-widest uppercase"
                               initial={{ opacity: 0 }}
@@ -49,6 +49,7 @@ export default function Content() {
                               // data-tilt-reverse="true"
                               data-tilt-max="10"
                               data-tilt-scale="1.1"
+                              id="techstack"
                               className="my-20 w-full bg-[#2E3F57] shadow-lg h-[50vh] flex justify-center items-center rounded-lg"
                               style={{
                                    transformStyle: "preserve-3d",
