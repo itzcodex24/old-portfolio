@@ -128,7 +128,7 @@ export default function Navbar() {
                                                   : "row",
                                         }}
                                    >
-                                        {links.map(({ title }, i) => (
+                                        {links.map(({ title, href }, i) => (
                                              <motion.li
                                                   key={i}
                                                   transition={{ duration: 1 }}
@@ -158,7 +158,7 @@ export default function Navbar() {
                                                        ></motion.div>
                                                   )}
                                                   <a
-                                                       href="#"
+                                                       href={href}
                                                        className="shadow-xl p-2 z-10"
                                                   >
                                                        {title}
