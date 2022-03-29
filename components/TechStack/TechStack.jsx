@@ -63,17 +63,17 @@ export default function TechStack() {
                animate={controls}
                variants={showVariant}
                ref={ref}
-               className="flex items-end h-full gap-2 "
+               className="flex items-end h-full md:gap-2 "
           >
                {TStack.map((item) => {
                     return (
                          <React.Fragment key={item.label}>
                               <motion.div key={item.label} className="h-full flex flex-col justify-end py-5 ">
                                    <Bar {...item} />
-                                   <h1 className="font-bold text-custom">
+                                   <h1 className="md:font-bold text-custom hidden md:block md:text-[1rem]">
                                         {item.label}
                                    </h1>
-                                   <h3 className="text-[0.7rem] text-custom">
+                                   <h3 className="md:text-[0.7rem] text-[0.7em] text-custom">
                                         {item.value + "%"}
                                    </h3>
                               </motion.div>
