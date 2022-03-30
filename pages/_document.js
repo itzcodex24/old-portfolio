@@ -5,7 +5,7 @@ import theme from "../lib/theme";
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html lang="en">
+      <html lang="en">
         <Head>
           <link rel="shortcut icon" href="../lib/icons/codex.png" />
         <Head />
@@ -15,7 +15,7 @@ export default class Document extends NextDocument {
           <Main />
           <NextScript />
         </body>
-      </Html>
+      </html>
     )
   }
 }
