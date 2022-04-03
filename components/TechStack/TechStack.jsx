@@ -41,6 +41,7 @@ export default function TechStack() {
           if (!inView) {
                console.log("Not In view");
                controls.start("hidden");
+               //
           }
      }, [controls, inView]);
      const showVariant = {
