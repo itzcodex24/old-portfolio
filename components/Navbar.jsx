@@ -38,6 +38,12 @@ export default function Navbar() {
           setAnimate.toggle();
      }
 
+     useEffect(() => {
+          if (variant) {
+               setAnimate.off();
+          }
+     }, [variant]);
+
      if (!variant) {
           backgroundC = "transparent";
      } else {
@@ -89,7 +95,7 @@ export default function Navbar() {
                               initial={{ x: "-100vw" }}
                               animate={{ x: 0 }}
                          >
-                              CODEX
+                              <a href="#main-title">CODEX</a>
                          </motion.h1>
                          {!variant && (
                               <MotionStack
