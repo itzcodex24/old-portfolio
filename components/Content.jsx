@@ -1,20 +1,54 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 import TechStack from "@components/TechStack/TechStack";
 
 export default function Content() {
+     const techstack = useAnimation();
+     const { ref, inView } = useInView();
+
+     useEffect(() => {
+          if (inView) {
+               techstack.start("visible");
+          }
+          if (!inView) {
+               techstack.start("hidden");
+          }
+     }, [techstack, inView]);
+
+     const sentence = {
+          hidden: { opacity: 1 },
+          visible: {
+               opacity: 1,
+               transition: { delay: 0.5, staggerChildren: 0.05 },
+          },
+     };
+     const letter = {
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+     };
      return (
           <section className="w-full min-h-[100vh] h-min-content flex justify-center  text-white">
                <div className="max-w-[1920px] flex justify-center">
-                    <motion.div className="flex flex-col md:w-[70%] text-center p-10 w-[400px] gap-5">
-                         <motion.h1
-                              className="md:text-5xl text-3xl font-bold p-10 text-[#1bfaad] font-aboutme tracking-widest uppercase"
-                              initial={{ opacity: 0 }}
-                              animate={{ opacity: 1 }}
-                              transition={{ duration: 1 }}
-                         >
-                              About Codex
+                    <motion.div
+                         variants={sentence}
+                         initial="hidden"
+                         animate="visible"
+                         className="flex flex-col md:w-[70%] text-center p-10 w-[400px] gap-5"
+                    >
+                         <motion.h1 className="md:text-5xl text-3xl font-bold py-10 text-[#1bfaad] font-aboutme tracking-widest uppercase">
+                              {"ABOUT CODEX".split("").map((char, index) => {
+                                   return (
+                                        <motion.span
+                                             className="text-4xl w-full md:text-2xl lg:text-5xl"
+                                             key={char + "-" + index}
+                                             variants={letter}
+                                        >
+                                             {char}
+                                        </motion.span>
+                                   );
+                              })}
                          </motion.h1>
                          <motion.div
                               data-tilt
@@ -77,12 +111,23 @@ export default function Content() {
                          </motion.div>
 
                          <motion.h1
-                              className="md:text-5xl text-3xl font-bold p-10 text-[#1bfaad] font-aboutme tracking-widest uppercase"
-                              initial={{ opacity: 0 }}
-                              animate={{ opacity: 1 }}
-                              transition={{ duration: 1 }}
+                              className="md:text-5xl text-3xl font-bold py-10 text-[#1bfaad] font-aboutme tracking-widest uppercase"
+                              variants={sentence}
+                              initial="hidden"
+                              animate={techstack}
+                              ref={ref}
                          >
-                              My TechStack
+                              {"MY TECHSTACK".split("").map((char, index) => {
+                                   return (
+                                        <motion.span
+                                             className="text-4xl w-full md:text-2xl lg:text-5xl"
+                                             key={char + "-" + index}
+                                             variants={letter}
+                                        >
+                                             {char}
+                                        </motion.span>
+                                   );
+                              })}
                          </motion.h1>
                          <motion.div
                               data-tilt

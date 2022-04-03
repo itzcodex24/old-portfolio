@@ -32,9 +32,16 @@ export default function Navbar() {
      const [color, setColor] = useBooleanValue("#506D96", "#10b981");
      const variant = useBreakpointValue([false, false, true]);
      const [animate, setAnimate] = useBooleanValue("closed", "open");
+     let backgroundC;
 
      function handleClick() {
           setAnimate.toggle();
+     }
+
+     if (!variant) {
+          backgroundC = "transparent";
+     } else {
+          backgroundC = "#506D96";
      }
 
      function handleOff() {
@@ -118,10 +125,10 @@ export default function Navbar() {
                          )}
                     </MotionBox>
                     {(variant || setAnimate.is(true)) && (
-                         <div className="flex-auto justify-between p-2 w-1/3">
+                         <div className="flex-auto justify-between p-2 w-full h-full items-center flex ">
                               <AnimateSharedLayout>
                                    <motion.ul
-                                        className="flex-auto text-custom p-4 font-bold cursor-pointer flex justify-end"
+                                        className="flex-auto text-custom p-4 font-bold cursor-pointer flex justify-end md:gap-2 "
                                         style={{
                                              flexDirection: setAnimate.is(true)
                                                   ? "column"
@@ -134,7 +141,7 @@ export default function Navbar() {
                                                   transition={{ duration: 1 }}
                                                   initial={{ x: "100vw" }}
                                                   animate={{ x: 0 }}
-                                                  className="transition-colors p-2 rounded-lg duration-1000 relative flex justify-center items-center outline-none"
+                                                  className="transition-colors w-full p-2 md:w-auto rounded-lg duration-1000 relative flex justify-center items-center outline-none"
                                                   style={{
                                                        color: color,
                                                   }}
@@ -148,18 +155,15 @@ export default function Navbar() {
                                                             className="absolute w-full h-3/4 bg-white rounded"
                                                             style={{
                                                                  backgroundColor:
-                                                                      setColor.is(
-                                                                           false
-                                                                      )
-                                                                           ? "transparent"
-                                                                           : "#506D96",
+                                                                      backgroundC,
                                                                  opacity: 0.2,
                                                             }}
                                                        ></motion.div>
                                                   )}
                                                   <a
                                                        href={href}
-                                                       className="shadow-xl p-2 z-10"
+                                                       className="border md:border-none md:text-xl w-full text-center z-10 text-3xl font-bold p-10 md:p-0 border-[#506d96]"
+                                                       onClick={setAnimate.off}
                                                   >
                                                        {title}
                                                   </a>

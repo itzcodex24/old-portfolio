@@ -28,7 +28,7 @@ export default function Main({ children }) {
                               variants={sentence}
                               initial="hidden"
                               animate="visible"
-                              className="md:p-20 text-custom font-bold tracking-widest text-7xl text-center inline-block font-tennis2"
+                              className="md:pb-10 pt-20 text-custom font-bold tracking-widest text-7xl text-center inline-block font-tennis2"
                               style={{
                                    scrollMarginTop: "100px",
                               }}

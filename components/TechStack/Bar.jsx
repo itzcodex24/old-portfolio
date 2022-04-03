@@ -23,10 +23,10 @@ export default function Bar({ label, value, Icon, backgroundColor }) {
                     className="md:w-[100px] flex justify-end py-5 flex-col
                     items-center rounded w-[40px] border transition-all tablet:bg-red-200"
                ></motion.div>
-               <h1 className="md:font-bold text-custom hidden md:block md:text-[1rem]">
+               <h1 className="md:font-bold text-custom hidden md:block md:text-[1rem] push">
                     {label}
                </h1>
-               <h3 className="md:text-[0.7rem] text-[0.7em] text-custom">
+               <h3 className="md:text-[0.7rem] text-[0.7em] text-custom ">
                     {value + "%"}
                </h3>
           </div>
