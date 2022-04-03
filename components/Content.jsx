@@ -31,17 +31,9 @@ export default function Content() {
                                    className="font-bold"
                                    style={{ transform: "translateZ(100px)" }}
                               >
-                                   Lorem ipsum dolor sit amet, consectetur
-                                   adipisicing elit. Accusantium, nemo veniam,
-                                   beatae blanditiis voluptas reprehenderit eum
-                                   tenetur dolorum, nihil alias quasi quo dolor
-                                   doloribus voluptate placeat. Blanditiis illo
-                                   dicta tempora! Quisquam porro reprehenderit
-                                   tempore, a at consequatur odit ea harum
-                                   itaque quod earum, magni non corrupti amet
-                                   assumenda vitae libero ducimus quam nesciunt
-                                   quae fuga. Voluptatem dolorem veniam eius
-                                   porro.
+                                   Hey There! I'm Codex! I am a 16 year old Front End Web Developer learning and creating ReactJS Apps. Over the past 2 years of my learning,
+                                   I have worked to become a better developer then I have been ever before. Check out the rest of my portfolio, have a look around, and I look forward
+                                   to hearing from you soon in the Contact Me section! 
                               </motion.p>
                          </motion.div>
                          <motion.div
