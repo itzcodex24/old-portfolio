@@ -31,7 +31,7 @@ export default function Content() {
                                    className="font-bold"
                                    style={{ transform: "translateZ(100px)" }}
                               >
-                                   Hey There! I'm Codex! I am a 16 year old Front End Web Developer learning and creating ReactJS Apps. Over the past 2 years of my learning,
+                                   Hey There! I&#39;m Codex! I am a 16 year old Front End Web Developer learning and creating ReactJS Apps. Over the past 2 years of my learning,
                                    I have worked to become a better developer then I have been ever before. Check out the rest of my portfolio, have a look around, and I look forward
                                    to hearing from you soon in the Contact Me section! 
                               </motion.p>
