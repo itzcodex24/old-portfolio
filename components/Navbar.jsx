@@ -54,7 +54,8 @@ export default function Navbar() {
      return (
           <>
                <motion.nav
-                    className="nav-header w-full h-20 bg-[#1B2533] justify-between items-start border-b-4 transition duration-1000 px-12 flex border-current relative z-50"
+                    id="navbar"
+                    className="nav-header w-full h-20 bg-[#1B2533] justify-between items-start border-b-4 transition duration-1000 px-12 flex border-current fixed z-50"
                     onMouseLeave={setColor.toggle}
                     variants={navbar}
                     animate={animate}
@@ -64,7 +65,6 @@ export default function Navbar() {
                               ? "flex-start"
                               : "center",
                          paddingTop: setAnimate.is(true) ? "1rem" : "0",
-                         position: setAnimate.is(true) ? "fixed" : "relative",
                          flexDirection: setAnimate.is(true) ? "column" : "row",
                          color: color,
                     }}

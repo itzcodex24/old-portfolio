@@ -35,9 +35,11 @@ export default function TechStack() {
      const { ref, inView } = useInView();
      useEffect(() => {
           if (inView) {
+               console.log("In view");
                controls.start("visible");
           }
           if (!inView) {
+               console.log("Not In view");
                controls.start("hidden");
           }
      }, [controls, inView]);
@@ -58,28 +60,18 @@ export default function TechStack() {
           },
      };
      return (
-          <motion.div
-               initial="hidden"
-               animate={controls}
-               variants={showVariant}
-               ref={ref}
-               className="flex items-end h-full md:gap-2 "
-          >
-               {TStack.map((item) => {
-                    return (
-                         <React.Fragment key={item.label}>
-                              <motion.div key={item.label} className="h-full flex flex-col justify-end py-5 ">
-                                   <Bar {...item} />
-                                   <h1 className="md:font-bold text-custom hidden md:block md:text-[1rem]">
-                                        {item.label}
-                                   </h1>
-                                   <h3 className="md:text-[0.7rem] text-[0.7em] text-custom">
-                                        {item.value + "%"}
-                                   </h3>
-                              </motion.div>
-                         </React.Fragment>
-                    );
-               })}
-          </motion.div>
+          <>
+               <motion.div
+                    initial="hidden"
+                    animate={controls}
+                    variants={showVariant}
+                    className="flex items-end justify-center h-full md:gap-2 gap-1 py-10"
+               >
+                    {TStack.map((item) => (
+                         <Bar key={item.label} {...item} />
+                    ))}
+               </motion.div>
+               <div className="w-full h-[1px]" ref={ref}></div>
+          </>
      );
 }

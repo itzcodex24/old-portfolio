@@ -10,8 +10,8 @@ export default function Bar({ label, value, Icon, backgroundColor }) {
      };
 
      return (
-          <div className="flex h-full flex-col justify-end items-center md:gap-5 gap-1">
-               <Icon className="w-[3rem] h-[3rem]" />
+          <div className="flex h-full flex-col justify-end items-center md:gap-1 drop-shadow-lg">
+               <Icon className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] " />
                <motion.div
                     transition={{ duration: 0.5, type: "tween" }}
                     variants={heightVariant}
@@ -21,8 +21,14 @@ export default function Bar({ label, value, Icon, backgroundColor }) {
                          backgroundColor: backgroundColor,
                     }}
                     className="md:w-[100px] flex justify-end py-5 flex-col
-                    items-center rounded w-[40px]"
+                    items-center rounded w-[40px] border transition-all tablet:bg-red-200"
                ></motion.div>
+               <h1 className="md:font-bold text-custom hidden md:block md:text-[1rem]">
+                    {label}
+               </h1>
+               <h3 className="md:text-[0.7rem] text-[0.7em] text-custom">
+                    {value + "%"}
+               </h3>
           </div>
      );
 }

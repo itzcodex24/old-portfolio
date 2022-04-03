@@ -33,6 +33,9 @@ module.exports = {
                height: {
                     "min-content": "min-content",
                },
+               screens: {
+                    tablet: "820px",
+               },
           },
      },
      variants: {

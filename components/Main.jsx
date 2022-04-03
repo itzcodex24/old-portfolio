@@ -24,22 +24,26 @@ export default function Main({ children }) {
                <div className="min-h-[100vh] bg-background pt-20 h-min-content mb-20">
                     <div className="flex justify-center">
                          <motion.h1
+                              id="main-title"
                               variants={sentence}
                               initial="hidden"
                               animate="visible"
                               className="md:p-20 text-custom font-bold tracking-widest text-7xl text-center inline-block font-tennis2"
+                              style={{
+                                   scrollMarginTop: "100px",
+                              }}
                          >
                               {/* <span className="text-exs"> &lt;</span> */}
 
                               {text.split("").map((char, index) => {
                                    return (
-                                             <motion.span
-                                                  className="text-5xl w-full md:text-7xl lg:text-8xl"
-                                                  key={char + "-" + index}
-                                                  variants={letter}
-                                             >
-                                                  {char}
-                                             </motion.span>
+                                        <motion.span
+                                             className="text-5xl w-full md:text-7xl lg:text-8xl"
+                                             key={char + "-" + index}
+                                             variants={letter}
+                                        >
+                                             {char}
+                                        </motion.span>
                                    );
                               })}
                               {/* <span className="text-exs"> /&gt;</span> */}
