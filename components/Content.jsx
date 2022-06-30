@@ -91,10 +91,10 @@ export default function Content() {
                               >
                                    Please note this site is still under
                                    construction. Currently the Contact section
-                                   doesn't work. If you need to contact me,
+                                   doesn&#39;t work. If you need to contact me,
                                    Please note this site is still under
                                    construction. Currently the Contact section
-                                   doesn't work. If you need to contact me,
+                                   doesn&#39;t work. If you need to contact me,
                                    please use my discord - codex.exe#0157
                               </motion.p>
                          </motion.div>
