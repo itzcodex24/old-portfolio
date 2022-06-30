@@ -13,8 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const icons = [
      { name: "twitter", url: "https://twitter.com/MasterAndrei2/" },
      {
-          name: "linkedin-in",
-          url: "https://www.linkedin.com/in/andrei-cherciu-8905a6211/",
+          name: "github",
+          url: "https://github.com/itzcodex24/",
      },
 ];
 

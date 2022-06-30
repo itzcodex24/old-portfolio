@@ -55,7 +55,7 @@ export default function Main({ children }) {
                                    className="p-2 border-b-4 border-topBorder"
                               ></motion.h1>
                               <div
-                                   className="text-base pt-4 tracking-tight font-light"
+                                   className="text-xl pt-4 tracking-tight font-black"
                                    style={{ fontFamily: "Montserrat" }}
                               >
                                    <Typewriter

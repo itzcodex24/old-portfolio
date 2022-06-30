@@ -65,17 +65,39 @@ export default function Content() {
                                    className="font-bold"
                                    style={{ transform: "translateZ(100px)" }}
                               >
-                                   Hey There! I&#39;m Codex! I am a 16 year old
+                                   Hey There! I&#39;m Codex! I am a 17 year old
                                    Front End Web Developer learning and creating
                                    ReactJS Apps. Over the past 2 years of my
                                    learning, I have worked to become a better
                                    developer then I have been ever before. Check
                                    out the rest of my portfolio, have a look
-                                   around, and I look forward to hearing from
-                                   you soon in the Contact Me section!
+                                   around.
                               </motion.p>
                          </motion.div>
-
+                         <motion.div
+                              data-tilt
+                              // data-tilt-reverse="true"
+                              data-tilt-max="10"
+                              data-tilt-scale="1.1"
+                              className="font-text font-bold max-w-[1000px] bg-[#2E3F57] p-10 rounded-lg shadow-lg"
+                              style={{
+                                   transformStyle: "preserve-3d",
+                                   transform: "perspective(200px)",
+                              }}
+                         >
+                              <motion.p
+                                   className="font-bold"
+                                   style={{ transform: "translateZ(100px)" }}
+                              >
+                                   Please note this site is still under
+                                   construction. Currently the Contact section
+                                   doesn't work. If you need to contact me,
+                                   Please note this site is still under
+                                   construction. Currently the Contact section
+                                   doesn't work. If you need to contact me,
+                                   please use my discord - codex.exe#0157
+                              </motion.p>
+                         </motion.div>
 
                          <motion.h1
                               className="md:text-5xl text-3xl font-bold py-10 text-[#1bfaad] font-aboutme tracking-widest uppercase"
