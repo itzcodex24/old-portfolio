@@ -90,12 +90,10 @@ export default function Content() {
                                    style={{ transform: "translateZ(100px)" }}
                               >
                                    Please note this site is still under
-                                   construction. Currently the Contact section
-                                   doesn&#39;t work. If you need to contact me,
-                                   Please note this site is still under
-                                   construction. Currently the Contact section
-                                   doesn&#39;t work. If you need to contact me,
-                                   please use my discord - codex.exe#0157
+                                   construction.The Contact section
+                                   is currently still a work in progress.
+                                   Therefore, if you need to contact me,
+                                   please do so through discord - codex.exe#0157.
                               </motion.p>
                          </motion.div>
 
