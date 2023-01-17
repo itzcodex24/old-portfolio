@@ -9,6 +9,7 @@ import ReactJS from "@static/TechStack/reactjs.svg";
 import NodeJS from "@static/TechStack/nodejs.svg";
 import TypeScript from "@static/TechStack/typescript.svg";
 import JavaScript from "@static/TechStack/javascript.svg";
+import LUA from "@static/TechStack/lua.svg";
 import HTML from "@static/TechStack/html.svg";
 
 const TStack = [
@@ -27,7 +28,7 @@ const TStack = [
      { label: "HTML", value: 90, Icon: HTML, backgroundColor: "#10b981" },
      { label: "CSS", value: 80, Icon: CSS, backgroundColor: "#10b981" },
      { label: "ReactJS", value: 90, Icon: ReactJS, backgroundColor: "#10b981" },
-     { label: "LUA", value: 70, Icon: NodeJS, backgroundColor: "#10b981" },
+     { label: "LUA", value: 70, Icon: LUA, backgroundColor: "#10b981" },
 ];
 
 export default function TechStack() {
