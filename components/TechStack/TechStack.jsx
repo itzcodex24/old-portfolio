@@ -14,20 +14,20 @@ import HTML from "@static/TechStack/html.svg";
 const TStack = [
      {
           label: "TypeScript",
-          value: 40,
+          value: 70,
           Icon: TypeScript,
           backgroundColor: "#10b981",
      },
      {
           label: "JavaScript",
-          value: 70,
+          value: 90,
           Icon: JavaScript,
           backgroundColor: "#10b981",
      },
      { label: "HTML", value: 90, Icon: HTML, backgroundColor: "#10b981" },
-     { label: "CSS", value: 70, Icon: CSS, backgroundColor: "#10b981" },
-     { label: "ReactJS", value: 80, Icon: ReactJS, backgroundColor: "#10b981" },
-     { label: "NodeJS", value: 30, Icon: NodeJS, backgroundColor: "#10b981" },
+     { label: "CSS", value: 80, Icon: CSS, backgroundColor: "#10b981" },
+     { label: "ReactJS", value: 90, Icon: ReactJS, backgroundColor: "#10b981" },
+     { label: "LUA", value: 70, Icon: NodeJS, backgroundColor: "#10b981" },
 ];
 
 export default function TechStack() {
